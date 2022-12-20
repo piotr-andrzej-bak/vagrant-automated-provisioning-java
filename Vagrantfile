@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     db01.vm.provision "shell", path: "mysql.sh"  
 
   end
-  
+   
 ### Memcache vm  #### 
   config.vm.define "mc01" do |mc01|
     mc01.vm.box = "geerlingguy/centos7"
